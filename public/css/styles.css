@@ -1,0 +1,500 @@
+/** ---------------------------------------------------------
+*
+* Modul 133
+* Webumfrage | Styles
+* Janina Imberg
+*
+* ----------------------------------------------------------*/
+
+
+/** ---------------------------------------------------------
+* Load custom font
+* ----------------------------------------------------------*/
+@font-face {
+    font-family: 'Sintony';
+    src: url('../fonts/sintony-regular.eot');
+    src: url('../fonts/sintony-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/sintony-regular.woff') format('woff'),
+    url('../fonts/sintony-regular.ttf') format('truetype'),
+    url('../fonts/sintony-regular.svg#sintonyregular') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+/** ---------------------------------------------------------
+* General styles and resets
+* ----------------------------------------------------------*/
+* {
+    margin-top: 0;
+}
+
+html {
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    background: url( '../images/wood2.jpg' ) top center repeat;
+}
+
+img {
+    border: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+
+a,
+a:link,
+a:active,
+a:visited,
+a:hover {
+    font-family: 'Sintony', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #888;
+    text-shadow: 0 1px 0 #fff;
+    text-decoration: none;
+}
+
+
+h1, h2 {
+    font-family: 'Sintony', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #888;
+    text-shadow: 0 1px 0 #fff;
+}
+
+
+/** ---------------------------------------------------------
+* General Form Styles
+* ----------------------------------------------------------*/
+label {
+    font-family: 'Sintony', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+input {
+    font-family: 'Sintony', sans-serif;
+    /*text-transform: uppercase;*/
+    font-weight: 300;
+    font-size: 12px;
+    color: #666;
+    text-shadow: 0 1px 0 #fff;
+}
+
+input[type="submit"]{
+    text-transform: uppercase;
+}
+
+::-webkit-input-placeholder {
+    font-family: 'Sintony', sans-serif;
+    /*text-transform: uppercase;*/
+    font-weight: 300;
+    font-size: 12px;
+    color: #999;
+    text-shadow: 0 1px 0 #fff;
+    font-style: italic;
+}
+
+::-moz-placeholder {
+    font-family: 'Sintony', sans-serif;
+    /*text-transform: uppercase;*/
+    font-weight: 300;
+    font-size: 12px;
+    color: #999;
+    text-shadow: 0 1px 0 #fff;
+    font-style: italic;
+}
+
+::-ms-input-placeholder{
+    font-family: 'Sintony', sans-serif;
+    /*text-transform: uppercase;*/
+    font-weight: 300;
+    font-size: 12px;
+    color: #999;
+    text-shadow: 0 1px 0 #fff;
+    font-style: italic;
+}
+
+input:-moz-placeholder {
+    font-family: 'Sintony', sans-serif;
+    /*text-transform: uppercase;*/
+    font-weight: 300;
+    font-size: 12px;
+    color: #999;
+    text-shadow: 0 1px 0 #fff;
+    font-style: italic;
+}
+
+form#login-form .error,
+form#register-form .error {
+    border: 1px solid #E93E52;
+}
+
+.error-msg {
+    font-size: 11px;
+    color: #E93E52;
+    float: right;
+    display: block;
+    height: 8px;
+    /*opacity: 0;*/
+}
+
+
+/** ---------------------------------------------------------
+* Login Form || Register Form
+* ----------------------------------------------------------*/
+#content {
+    width: 520px;
+    margin: 120px auto 30px;
+    padding: 25px 25px 55px;
+    position: relative;
+
+    background: #fcfff7; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fcfff7 35%, #f8f5ea 98%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(35%,#fcfff7), color-stop(98%,#f8f5ea)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #fcfff7 35%,#f8f5ea 98%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #fcfff7 35%,#f8f5ea 98%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #fcfff7 35%,#f8f5ea 98%); /* IE10+ */
+    background: linear-gradient(to bottom,  #fcfff7 35%,#f8f5ea 98%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff7', endColorstr='#f8f5ea',GradientType=0 ); /* IE6-9 */
+
+    border-radius: 4px;
+    color: #7E7975;
+    box-shadow:
+        0 2px 2px rgba(0, 0, 0, 0.2),
+        0 1px 5px rgba(0, 0, 0, 0.2),
+        0 0 0 12px rgba(255, 255, 255, 0.4);
+}
+
+#content h1 {
+    margin: 10px 0 0 0;
+    color: #468EAA;
+    margin-bottom: 0;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.login #content,
+.register #content {
+    width: 360px;
+}
+
+form#login-form {
+}
+
+form#login-form .form,
+form#register-form .form  {
+    display: block;
+    clear: both;
+    margin-bottom: 10px;
+}
+
+form#login-form label,
+form#register-form label {
+    display: inline-block;
+    width: 120px;
+}
+
+form#login-form input,
+form#register-form input {
+    height: 22px;
+    padding: 4px 7px 2px 7px;
+    width: 220px;
+    border-radius: 3px;
+    border: 1px solid #C5C2A1;
+    box-shadow:
+        1px 1px 0 #FFF,
+        -1px -1px 0 #FFF,
+        inset 0 0px 8px #D1D1D1,
+        inset 0 2px 4px #DAD9D7,
+        inset 0 1px 1px #918E81;
+    background: #E9E9E0;
+    line-height: 28px;
+    clear: both;
+    margin: 0 0 0px 0;
+
+    -webkit-transition: border 350ms ease-in-out;
+}
+
+form#login-form input[type="submit"],
+form#register-form input[type="submit"],
+form#question-form input[type="submit"] {
+    margin: 0px 0 0 0;
+    width: 100px;
+    height: 30px;
+    padding: 1px 0 0 0;
+    line-height: 30px;
+    background: #94DFF1;
+    box-shadow:
+        1px 1px 0 #FFF,
+        inset 0 1px 0 #D2F1F8,
+        inset 0 -2px 2px #8EBDCF;
+    border: 1px solid #77AEC4;
+    float: right;
+    cursor: pointer;
+    color: #496E7C;
+    font-size: 13px;
+
+    -webkit-transition: all 200ms ease-in-out;
+}
+
+form#question-form input[type="submit"] {
+    float: none;
+    margin-left: 420px;
+}
+
+form#login-form input[type="submit"]:hover,
+form#register-form input[type="submit"]:hover,
+form#question-form input[type="submit"]:hover {
+    box-shadow:
+        1px 1px 0 #FFF,
+        inset 0 2px 5px #82BFCE;
+    color: #468EAA;
+    text-shadow: 0 1px 0 #D2F1F8;
+}
+
+form#login-form h1,
+form#register-form h1 {
+    border-bottom: 1px solid #CCC;
+    padding: 0px 0 10px 0;
+    box-shadow: 0px 1px 0 #FFF;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+p.no-account {
+    float: right;
+}
+
+/** ---------------------------------------------------------
+* Survey Page - General Layout
+* ----------------------------------------------------------*/
+#header {
+    width: 520px;
+    margin: 0px auto 0px;
+    padding: 20px 25px 35px 25px;
+    height: 60px;
+    position: relative;
+
+    background: #fcfff7; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fcfff7 35%, #f8f5ea 98%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(35%,#fcfff7), color-stop(98%,#f8f5ea)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #fcfff7 35%,#f8f5ea 98%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #fcfff7 35%,#f8f5ea 98%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #fcfff7 35%,#f8f5ea 98%); /* IE10+ */
+    background: linear-gradient(to bottom,  #fcfff7 35%,#f8f5ea 98%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff7', endColorstr='#f8f5ea',GradientType=0 ); /* IE6-9 */
+
+    border-radius: 0 0 4px 4px;
+    color: #7E7975;
+    box-shadow:
+        0 2px 2px rgba(0, 0, 0, 0.2),
+        0 1px 5px rgba(0, 0, 0, 0.2),
+        0 0 0 12px rgba(255, 255, 255, 0.4);
+}
+
+.login #header,
+.register #header {
+    width: 360px;
+    height: 40px;
+}
+
+#header h1 {
+    border-bottom: 1px solid #CCC;
+    padding: 0px 0 10px 0;
+    box-shadow: 0px 1px 0 #FFF;
+}
+
+ul#main-nav {
+    list-style: none;
+    display: block;
+    margin: 30px 0 0 0;
+    padding: 0;
+}
+
+ul#main-nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px 0 0;
+}
+
+ul#main-nav li.right {
+    float: right;
+    padding-right: 0;
+}
+
+ul#main-nav li a {
+    color: #666;
+    text-transform: uppercase;
+    -webkit-transition: color 250ms ease-in-out;
+    font-size: 14px;
+}
+
+ul#main-nav li a.active,
+ul#main-nav li a:hover {
+    color: #468EAA;
+}
+
+span.right.small {
+    float: right;
+    padding-right: 0;
+    font-size: 13px;
+    line-height: 0;
+}
+
+#logout {
+    text-align: right;
+    float: right;
+}
+
+.login ul#main-nav,
+.register ul#main-nav {
+    margin: 0px 0 0 0;
+}
+
+/** ---------------------------------------------------------
+* Survey Form
+* ----------------------------------------------------------*/
+#question-form h3 {
+    text-transform: uppercase;
+    font-family: 'Sintony', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: #468EAA;
+    text-shadow: 0 1px 0 #fff;
+    width: 100%;
+    float: left;
+    display: block;
+    margin: 10px 0 5px 0;
+}
+
+#question-form label {
+    display: block;
+    font-family: 'Sintony', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    padding: 12px 0 6px 0;
+    border-bottom: 1px dotted #CCC;
+    float: left;
+    width: 100%;
+    color: #468EAA;
+    text-shadow: 0 1px 0 #fff;
+    text-transform: none;
+}
+
+#question-form ul {
+    list-style: none;
+    margin: 10px 0 40px 0;
+    padding: 0 0 0 0px;
+    display: block;
+    float: left;
+}
+
+#question-form li {
+    clear: both;
+    float: left;
+    width: 515px;
+    padding: 8px 0 8px 5px;
+}
+
+#question-form li:nth-child(2n) {
+    background: #F5F3EF;
+}
+
+#question-form li.error {
+    color: #E93E52;
+}
+
+#question-form_ input[type="radio"] {
+    margin-right: 5px;
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+}
+
+#question-form .text {
+    display: block;
+    float: right;
+    width: 95%;
+    line-height: 18px;
+}
+
+.participated-notice {
+    height: 80px;
+    width: 480px;
+    line-height: 32px;
+    padding: 20px;
+}
+
+
+/** ---------------------------------------------------------
+* Evaluation
+* ----------------------------------------------------------*/
+.result-charts {
+    width: 520px;
+    height: 180px;
+    clear: both;
+    display: block;
+    padding: 10px 0 20px 0;
+}
+
+.result-charts h3 {
+    display: block;
+    width: 520px;
+    border-bottom: 1px dotted #CCC;
+    padding: 10px 0;
+}
+
+.result-charts-graph {
+    width: 200px;
+    height: 180px;
+    float: left;
+    display: block;
+    padding: 0 20px;
+}
+
+.result-charts-text {
+    width: 260px;
+    display: block;
+    float: left;
+    height: 180px;
+}
+
+.result-charts-text ul {
+    list-style: none;
+    margin: 15px 0 0 0;
+    padding: 0;
+}
+
+.result-charts-text li {
+    line-height: 16px;
+    padding: 4px 0;
+}
+
+.color-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+
+.percent-text {
+    display: inline-block;
+    margin: 1px 0 0 10px;
+    vertical-align: top;
+}
+
+.percent-text.not-set {
+    text-decoration: line-through;
+}
+
